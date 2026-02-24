@@ -1,0 +1,9 @@
+# If Kafka CLI tools are available:
+
+# Create topics
+kafka-topics --bootstrap-server <BROKERS> --create --topic orders.created --partitions 1 --replication-factor 1
+kafka-topics --bootstrap-server <BROKERS> --create --topic orders.status.updated --partitions 1 --replication-factor 1
+kafka-topics --bootstrap-server <BROKERS> --create --topic orders.fulfillment.requested --partitions 1 --replication-factor 1
+
+# Consume
+kafka-console-consumer --bootstrap-server <BROKERS> --topic orders.created --from-beginning

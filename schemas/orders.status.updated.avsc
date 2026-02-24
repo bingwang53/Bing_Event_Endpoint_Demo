@@ -1,0 +1,14 @@
+{
+  "type": "record",
+  "name": "OrderStatusUpdatedEvent",
+  "namespace": "com.bingwang.productorder",
+  "fields": [
+    { "name": "eventId", "type": "string" },
+    { "name": "eventType", "type": "string" },
+    { "name": "timestamp", "type": "string" },
+    { "name": "orderId", "type": "int" },
+    { "name": "previousStatus", "type": "string" },
+    { "name": "newStatus", "type": "string" },
+    { "name": "updatedBy", "type": "string" }
+  ]
+}

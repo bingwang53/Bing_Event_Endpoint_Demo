@@ -1,0 +1,12 @@
+# Set your values first:
+# <BROKERS> e.g. localhost:9092
+# <TOPIC> e.g. orders.created
+
+# Produce orders.created
+kcat -b <BROKERS> -t orders.created -P -l samples/orders.created.json
+
+# Produce orders.status.updated
+kcat -b <BROKERS> -t orders.status.updated -P -l samples/orders.status.updated.json
+
+# Produce orders.fulfillment.requested
+kcat -b <BROKERS> -t orders.fulfillment.requested -P -l samples/orders.fulfillment.requested.json

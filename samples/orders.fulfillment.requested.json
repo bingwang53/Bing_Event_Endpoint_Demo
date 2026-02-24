@@ -1,0 +1,8 @@
+{
+  "eventId": "evt-1003",
+  "eventType": "orders.fulfillment.requested",
+  "timestamp": "2026-02-24T20:01:00Z",
+  "orderId": 101,
+  "priority": "normal",
+  "warehouseCode": "WH-AUS-01"
+}

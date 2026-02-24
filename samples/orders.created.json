@@ -1,0 +1,13 @@
+{
+  "eventId": "evt-1001",
+  "eventType": "orders.created",
+  "timestamp": "2026-02-24T20:00:00Z",
+  "orderId": 101,
+  "customerName": "Demo Store",
+  "status": "pending",
+  "totalAmount": 1359.97,
+  "items": [
+    { "productId": 1, "quantity": 1 },
+    { "productId": 2, "quantity": 2 }
+  ]
+}

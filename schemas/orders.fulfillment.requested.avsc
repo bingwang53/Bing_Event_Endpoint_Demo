@@ -1,0 +1,13 @@
+{
+  "type": "record",
+  "name": "OrderFulfillmentRequestedEvent",
+  "namespace": "com.bingwang.productorder",
+  "fields": [
+    { "name": "eventId", "type": "string" },
+    { "name": "eventType", "type": "string" },
+    { "name": "timestamp", "type": "string" },
+    { "name": "orderId", "type": "int" },
+    { "name": "priority", "type": "string" },
+    { "name": "warehouseCode", "type": "string" }
+  ]
+}

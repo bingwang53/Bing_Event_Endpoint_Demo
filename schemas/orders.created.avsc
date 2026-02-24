@@ -1,0 +1,28 @@
+{
+  "type": "record",
+  "name": "OrderCreatedEvent",
+  "namespace": "com.bingwang.productorder",
+  "fields": [
+    { "name": "eventId", "type": "string" },
+    { "name": "eventType", "type": "string" },
+    { "name": "timestamp", "type": "string" },
+    { "name": "orderId", "type": "int" },
+    { "name": "customerName", "type": "string" },
+    { "name": "status", "type": "string" },
+    { "name": "totalAmount", "type": "double" },
+    {
+      "name": "items",
+      "type": {
+        "type": "array",
+        "items": {
+          "type": "record",
+          "name": "OrderItem",
+          "fields": [
+            { "name": "productId", "type": "int" },
+            { "name": "quantity", "type": "int" }
+          ]
+        }
+      }
+    }
+  ]
+}

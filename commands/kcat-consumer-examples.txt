@@ -1,0 +1,8 @@
+# Consume orders.created
+kcat -b <BROKERS> -t orders.created -C -o beginning -q
+
+# Consume orders.status.updated
+kcat -b <BROKERS> -t orders.status.updated -C -o beginning -q
+
+# Consume orders.fulfillment.requested
+kcat -b <BROKERS> -t orders.fulfillment.requested -C -o beginning -q

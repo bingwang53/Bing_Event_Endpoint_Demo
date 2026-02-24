@@ -1,0 +1,9 @@
+{
+  "eventId": "evt-1002",
+  "eventType": "orders.status.updated",
+  "timestamp": "2026-02-24T20:05:00Z",
+  "orderId": 101,
+  "previousStatus": "pending",
+  "newStatus": "processing",
+  "updatedBy": "fulfillment-service"
+}
